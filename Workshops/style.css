@@ -14,3 +14,26 @@ a {
     line-height: 36px;
     font-weight: bold;
 }
+
+.base_text {
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 30px;
+    color: #7d7987;
+}
+
+.medium_header {
+    color: coral;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 80px;
+
+}
+
+.medium_header, .base_text {
+    font-style: normal;
+}
+
+.my_face {
+    border-radius: 10px;
+}
