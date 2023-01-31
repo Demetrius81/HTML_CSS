@@ -96,3 +96,9 @@ a {
 .product-item:hover .button {
     background: #fc5a5a;
 }
+
+.links_contacts {
+    color: cadetblue;
+    font-size: 18px;
+    line-height: 24px;
+}
