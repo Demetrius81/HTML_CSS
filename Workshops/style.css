@@ -1,3 +1,65 @@
+body {
+    font-family: sans-serif;
+}
+
 a {
     text-decoration: none;
+}
+
+.menu_link {
+    color: cornflowerblue;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.big_header {
+    color: #222;
+    font-size: 28px;
+    line-height: 36px;
+    font-weight: bold;
+}
+
+.base_text {
+    font-weight: 300;
+    font-size: 18px;
+    color: #7d7987;
+}
+
+.medium_header {
+    color: coral;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 80px;
+
+}
+
+.my_face {
+    border-radius: 10px;
+}
+
+.input_field {
+    width: 200px;
+    height: 30px;
+    outline: none;
+    border-radius: 15px;
+}
+
+.input_button {
+    width: 100px;
+    height: 30px;
+    border-radius: 10px;
+    
+}
+
+.base_text, .input_field {
+    line-height: 30px;
+}
+
+.medium_header, .base_text {
+    font-style: normal;
+}
+
+.input_field, .input_button {
+    font-size: 14px;
+    border: 1px solid #ccc;
 }
