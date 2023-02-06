@@ -18,13 +18,13 @@
     font-size: 14px;
     line-height: 16px;
     color: #000;
-    float: left;
+    /* float: left; */
 }
 
 .site__logo {
     width: 128px;
     height: 40px;
-    float: left;
+    /* float: left; */
 }
 
 
