@@ -1,13 +1,23 @@
 * {
+    padding: 0;
+    margin: 0;
     text-decoration: none;
-    font-family: 'Abhaya Libre Medium';
+}
 
+body {
+    font-family: 'Abhaya Libre Medium';
 }
 
 .header {
     padding-top: 40px;
     padding-bottom: 40px;
+    display: flex;
+
 }
+
+
+
+
 
 .header__links {
     margin-left: 492px;
@@ -18,13 +28,11 @@
     font-size: 14px;
     line-height: 16px;
     color: #000;
-    /* float: left; */
 }
 
 .site__logo {
     width: 128px;
     height: 40px;
-    /* float: left; */
 }
 
 
