@@ -5,11 +5,12 @@
 }
 
 .body {
-    max-width: 1200px;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: wrap;
     justify-content: center;
+    align-content: center;
+    align-items: center;
     font-family: 'Abhaya Libre Medium';
 }
 
@@ -54,23 +55,27 @@
     color: #F25822;
 }
 
-.body {
+.content {
     margin-top: 44px;
     margin-bottom: 162px;
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+    flex-wrap: wrap;
 }
 
-/* .body__content {
+.content__main {
     width: 481px;
-    min-height: 374px;
-    float: left;
+    height: 374px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .content__image {
-    margin-left: 80px;
     width: 610.73px;
-    height: 372.9px;
-    float: left;
-} */
+    height: 374px;
+}
 
 .huge__header {
     margin-bottom: 26px;
@@ -92,6 +97,9 @@
 
 .body_buttons {
     margin-top: 37px;
+    display: flex;
+    justify-content: flex-start;
+    gap: 72;
 }
 
 .start__button {
@@ -110,7 +118,6 @@
 }
 
 .watch__link {
-    margin-left: 72px;
     font-style: normal;
     font-weight: 500;
     font-size: 15px;
@@ -121,9 +128,8 @@
 .logos {
     padding-top: 97px;
     padding-bottom: 96px;
-}
-
-.logos>img {
-    margin-left: 24px;
-    margin-right: 24px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 48px;
 }
