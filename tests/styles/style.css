@@ -1,3 +1,16 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.page {
+    font-family: sans-serif;
+    font-size: 40px;
+    width: 100%;
+    min-height: 100vh;
+}
+
 .logo {
     border: 1px solid;
     min-width: 200px;
@@ -34,24 +47,31 @@
 
 .item {
     border: 1px solid;
-    min-width: 100px;
-    min-height: 100px;
+    background-color: blue;
+    width: 500px;
+    height: 100px;
 }
 
 .cell {
     border: 1px solid;
-    min-width: 100px;
-    min-height: 100px;
+    background-color: aqua;
+    width: 100px;
+    height: 100px;
 }
 
 .body__flex {
+    height: 500px;
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+    align-content: space-between;
+
 }
 
 .body__grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(3, 1fr);
+    gap: 20px;
 }
