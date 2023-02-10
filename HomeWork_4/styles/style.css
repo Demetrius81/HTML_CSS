@@ -1,16 +1,35 @@
 * {
+    padding: 0;
+    margin: 0;
     text-decoration: none;
-    font-family: 'Abhaya Libre Medium';
+}
 
+.body {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    align-items: stretch;
+    font-family: 'Abhaya Libre Medium';
 }
 
 .header {
     padding-top: 40px;
     padding-bottom: 40px;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.header__list {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
 }
 
 .header__links {
-    margin-left: 492px;
     padding-top: 11px;
     padding-bottom: 12px;
     padding-left: 8px;
@@ -18,45 +37,57 @@
     font-size: 14px;
     line-height: 16px;
     color: #000;
-    /* float: left; */
+    display: flex;
+    justify-content: space-between;
 }
 
 .site__logo {
     width: 128px;
     height: 40px;
-    /* float: left; */
-}
-
-
-.header__links>a {
-    margin-left: 15px;
-    margin-right: 15px;
 }
 
 .main__link {
+    font-family: 'Glory';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 16px;
+
     color: #F25822;
 }
 
-.body {
-    margin-top: 44px;
-    margin-bottom: 162px;
+.black_link {
+    font-family: 'Abhaya Libre ExtraBold';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 14px;
+    line-height: 17px;
+    color: #000000;
 }
 
-/* .body__content {
+.content {
+    margin-top: 44px;
+    margin-bottom: 162px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.content__main {
     width: 481px;
-    min-height: 374px;
-    float: left;
+    height: 374px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .content__image {
-    margin-left: 80px;
     width: 610.73px;
-    height: 372.9px;
-    float: left;
-} */
+    height: 374px;
+}
 
 .huge__header {
-    margin-bottom: 26px;
+    font-family: 'Abhaya Libre Medium';
     font-style: normal;
     font-weight: 500;
     font-size: 60px;
@@ -73,8 +104,12 @@
     color: #888888;
 }
 
-.body_buttons {
-    margin-top: 37px;
+.body__buttons {
+    width: 290;
+    display: flex;
+    justify-content: flex-start;
+    gap: 72px;
+    align-items: center;
 }
 
 .start__button {
@@ -93,7 +128,6 @@
 }
 
 .watch__link {
-    margin-left: 72px;
     font-style: normal;
     font-weight: 500;
     font-size: 15px;
@@ -104,9 +138,8 @@
 .logos {
     padding-top: 97px;
     padding-bottom: 96px;
-}
-
-.logos>img {
-    margin-left: 24px;
-    margin-right: 24px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 48px;
 }

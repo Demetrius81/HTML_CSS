@@ -1,0 +1,57 @@
+.logo {
+    border: 1px solid;
+    min-width: 200px;
+    min-height: 50px;
+}
+
+.nav {
+    border: 1px solid;
+    min-width: 200px;
+    min-height: 50px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+}
+
+.contacts {
+    border: 1px solid;
+    min-width: 200px;
+    min-height: 50px;
+}
+
+.copy {
+    border: 1px solid;
+    min-width: 200px;
+    min-height: 20px;
+}
+
+.item {
+    border: 1px solid;
+    min-width: 100px;
+    min-height: 100px;
+}
+
+.cell {
+    border: 1px solid;
+    min-width: 100px;
+    min-height: 100px;
+}
+
+.body__flex {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.body__grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+}
