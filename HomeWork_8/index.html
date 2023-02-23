@@ -12,18 +12,28 @@
     </head>
     <body>
         <div class="site">
-            <div class="nav main">
-                <div class="left">
-                    <img src="img/nav/logo.png" alt="logo" class="nav__logo">
-                    <img src="img/nav/search.svg" alt="search" class="nav__search">
-                </div>
-                <div class="right">
-                    <img src="img/nav/menu.svg" alt="menu" class="nav__menu">
-                    <img src="img/nav/user.svg" alt="user" class="nav__user">
-                    <img src="img/nav/basket.svg" alt="basket" class="nav__basket">
-                </div>
-            </div>
-            <div class="header main">
+            <header class="nav main">
+                <nav class="left">
+                    <a href="index.html" class="home">
+                        <img src="img/nav/logo.png" alt="logo" class="nav__logo">
+                    </a>
+                    <a href="#" class="search">
+                        <img src="img/nav/search.svg" alt="search" class="nav__search">
+                    </a>
+                </nav>
+                <nav class="right">
+                    <a href="" class="right__menu nav__menu1">
+                        <img src="img/nav/menu.svg" alt="menu" class="nav__menu">
+                    </a>
+                    <a href="" class="right__menu nav__menu2 nav__menu__hide">
+                        <img src="img/nav/user.svg" alt="user" class="nav__user">
+                    </a>
+                    <a href="" class="right__menu nav__menu3 nav__menu__hide">
+                        <img src="img/nav/basket.svg" alt="basket" class="nav__basket">
+                    </a>
+                </nav>
+            </header>
+            <article class="header main">
                 <img src="img/header/man.png" alt="man" class="header__man">
                 <div class="header__title">
                     <h1 class="huge__title">THE BRAND</h1>
@@ -32,8 +42,8 @@
                         <span class="big__title__red">FASHION</span>
                     </h2>
                 </div>
-            </div>
-            <div class="menu main">
+            </article>
+            <article class="menu main">
                 <div class="item item-1">
                     <img src="img/menu/item1.png" alt="item" class="item__img">
                     <div class="item__text">
@@ -57,13 +67,14 @@
                 </div>
                 <div class="item item-4">
                     <img src="img/menu/item4.png" alt="item" class="item__img__long">
+                    <img src="img/menu/item4mobole.png" alt="item" class="item__img__mobile">
                     <div class="item__text">
                         <h4 class="medium__title">LUXIROUS & TRENDY</h4>
                         <h3 class="large__title">ACCESORIES</h3>
                     </div>
                 </div>
-            </div>
-            <div class="content main">
+            </article>
+            <article class="content main">
                 <div class="title">
                     <h5 class="not_small__title">Fetured Items</h5>
                     <p class="title__text text">Shop for items based on what we featured in this week</p>
@@ -123,7 +134,7 @@
                 <div class="btn__browse">
                     <button class="browse">Browse All Product</button>
                 </div>
-            </div>
+            </article>
         </div>
     </body>
 </html>
