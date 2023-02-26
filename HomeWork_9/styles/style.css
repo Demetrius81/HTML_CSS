@@ -279,6 +279,8 @@
     flex-flow: row wrap;
     justify-content: space-between;
     align-items: center;
+    margin-top: 103px;
+    margin-bottom: 104px;
 }
 
 .links__item {
@@ -287,8 +289,7 @@
     justify-content: center;
     align-items: center;
     width: 360px;
-    margin-top: 103px;
-    margin-bottom: 104px;
+
 }
 
 .end__links__title {
@@ -372,15 +373,20 @@
     line-height: 167.2%;
 }
 
+.subscribe__form__btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
 .submit__text {
     font-weight: 400;
     font-size: 14px;
     line-height: 17px;
-    display: flex;
-    align-items: center;
-    text-align: center;
+    display: block;
     color: #FFFFFF;
-    margin-left: 16px;
 }
 
 .submit {
@@ -389,6 +395,9 @@
     width: 100px;
     border-radius: 0 24px 24px 0;
     border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .submit:hover {
@@ -521,6 +530,7 @@
         flex-flow: column wrap;
         justify-content: center;
         align-items: center;
+        gap: 50px;
     }
 
     .subscribe {
@@ -579,6 +589,7 @@
         flex-flow: column wrap;
         justify-content: center;
         align-items: center;
+        gap: 50px;
     }
 
     .subscribe {
@@ -603,7 +614,7 @@
         font-size: 18px;
         line-height: 167.2%;
     }
-    
+
     .subscribe__big__title {
         font-weight: 700;
         font-size: 18px;
@@ -701,6 +712,7 @@
         flex-flow: column wrap;
         justify-content: center;
         align-items: center;
+        gap: 50px;
     }
 
     .subscribe {
@@ -725,7 +737,7 @@
         font-size: 14px;
         line-height: 167.2%;
     }
-    
+
     .subscribe__big__title {
         font-weight: 700;
         font-size: 24px;
