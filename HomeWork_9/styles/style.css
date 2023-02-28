@@ -42,6 +42,15 @@
     padding-bottom: 20px;
 }
 
+.drop__title {}
+
+.drop__text {}
+
+.drop__title__red {}
+
+
+
+
 .header {
     background: #F1E4E6;
     display: flex;
