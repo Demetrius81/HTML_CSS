@@ -1,0 +1,41 @@
+nav .nav__link {
+  font-family: sans-serif;
+  font-style: normal;
+}
+
+.title {
+  display: block;
+  font-family: sans-serif;
+  color: red;
+  font-size: 2em;
+  font-weight: bold;
+  background: blue;
+}
+
+.container {
+  width: 1200px;
+}
+.container .text {
+  color: #8A2BE2;
+}
+
+nav .nav {
+  display: flex;
+  gap: 16px;
+}
+nav .nav__link {
+  text-decoration: none;
+}
+
+.content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+}
+.content__item {
+  height: 200px;
+  border: 1px solid #000;
+  width: 300px;
+}/*# sourceMappingURL=styles.css.map */
