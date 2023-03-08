@@ -1,0 +1,17 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: "Open Sans", sans-serif;
+}
+
+.sort {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    &__center {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+}
