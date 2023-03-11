@@ -1,4 +1,19 @@
-* {
+$siteDesktopWidth: 1140px;
+$pinkColor: #f16d7f;
+
+@mixin flexCenter {
+    display: flex;
+    justify-content: center;
+}
+
+@mixin flexCenterCenterColumn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+}
+
+html {
     margin: 0;
     padding: 0;
     text-decoration: none;
@@ -20,8 +35,7 @@
     }
 
     &__left {
-        display: flex;
-        justify-content: center;
+        @include flexCenter();
         align-items: baseline;
         gap: 41px;
         padding-top: 18px;
@@ -30,8 +44,7 @@
     }
 
     &__right {
-        display: flex;
-        justify-content: center;
+        @include flexCenter();
         align-items: baseline;
         gap: 33px;
         padding-top: 26px;
@@ -58,9 +71,8 @@
         &__menu {
             margin: 32px;
             list-style: none;
-            display: flex;
+            @include flexCenter();
             flex-flow: column;
-            justify-content: center;
             align-items: flex-start;
             gap: 11px;
             &__title {
@@ -74,7 +86,7 @@
                 &__red {
                     margin-top: 12px;
                     font-weight: 400;
-                    color: #f16d7f;
+                    color: $pinkColor;
                 }
             }
 
@@ -92,7 +104,7 @@
             }
 
             &__btn:hover {
-                border: 1px dotted #f16d7f;
+                border: 1px dotted $pinkColor;
             }
         }
     }
@@ -110,9 +122,8 @@
         width: 20px;
         height: 20px;
         border-radius: 10px;
-        background: #f16d7f;
-        display: flex;
-        justify-content: center;
+        background: $pinkColor;
+        @include flexCenter();
         align-items: center;
         position: absolute;
         top: -10px;
@@ -131,7 +142,7 @@
     }
 
     &__title {
-        border-left: 12px solid #f16d7f;
+        border-left: 12px solid $pinkColor;
         margin-left: 64px;
         padding-left: 16px;
     }
@@ -150,15 +161,14 @@
         color: #222222;
 
         &__red {
-            color: #f16d7f;
+            color: $pinkColor;
         }
     }
 }
 
 .menu {
     background: #e5e5e5;
-    display: flex;
-    justify-content: center;
+    @include flexCenter();
     flex-flow: row wrap;
     gap: 30px;
     padding-top: 65px;
@@ -178,7 +188,7 @@
         }
 
         &__img__long {
-            min-width: 1140px;
+            min-width: $siteDesktopWidth;
             min-height: 180px;
             opacity: 0.4;
         }
@@ -207,7 +217,7 @@
                 font-size: 24px;
                 line-height: 29px;
                 text-align: center;
-                color: #f16d7f;
+                color: $pinkColor;
             }
         }
     }
@@ -221,22 +231,16 @@
     }
 
     &__item-4 {
-        max-width: 1140px;
+        max-width: $siteDesktopWidth;
         min-height: 180px;
     }
 }
 
 .shop {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-flow: column;
+    @include flexCenterCenterColumn();
     gap: 48px;
     &__title {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-flow: column;
+        @include flexCenterCenterColumn();
 
         &__not_small {
             font-weight: 400;
@@ -257,15 +261,11 @@
         place-items: center center;
 
         &__card {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-flow: column;
+            @include flexCenterCenterColumn();
             background: #f8f8f8;
 
             &__image_font {
-                display: flex;
-                justify-content: center;
+                @include flexCenter();
                 align-items: center;
                 min-width: 360px;
                 min-height: 420px;
@@ -299,16 +299,16 @@
                 font-weight: 400;
                 font-size: 16px;
                 line-height: 19px;
-                color: #f16d7f;
+                color: $pinkColor;
             }
         }
 
         &__card:hover {
-            border: 1px dotted #f16d7f;
+            border: 1px dotted $pinkColor;
         }
 
         &__card:active {
-            border: 1px solid #f16d7f;
+            border: 1px solid $pinkColor;
         }
     }
 
@@ -348,13 +348,12 @@
 
 .footer {
     &__nav {
-        display: flex;
-        justify-content: center;
+        @include flexCenter();
         align-items: center;
         background: #222224;
 
         &__end_links {
-            min-width: 1140px;
+            min-width: $siteDesktopWidth;
             display: flex;
             flex-flow: row wrap;
             justify-content: space-between;
@@ -363,14 +362,13 @@
             margin-bottom: 104px;
 
             &__item {
-                display: flex;
+                @include flexCenter();
                 flex-flow: column wrap;
-                justify-content: center;
                 align-items: center;
                 width: 360px;
 
                 &__link > svg > path {
-                    fill: #f16d7f;
+                    fill: $pinkColor;
                 }
 
                 &__link:hover > svg > path {
@@ -401,12 +399,11 @@
         background-image: url("../img/footer/photo_subscribe.jpg");
         background-size: cover;
         background-position: center;
-        display: flex;
-        justify-content: center;
+        @include flexCenter();
         align-items: center;
 
         &__box {
-            min-width: 1140px;
+            min-width: $siteDesktopWidth;
             display: flex;
             flex-flow: row wrap;
             justify-content: space-between;
@@ -415,10 +412,7 @@
             padding-bottom: 126px;
 
             &__description {
-                display: flex;
-                flex-flow: column;
-                justify-content: center;
-                align-items: center;
+                @include flexCenterCenterColumn();
                 gap: 40px;
 
                 &__text {
@@ -436,10 +430,7 @@
             }
 
             &__form {
-                display: flex;
-                flex-flow: column;
-                justify-content: center;
-                align-items: center;
+                @include flexCenterCenterColumn();
                 gap: 32px;
 
                 &__medium_title {
@@ -457,8 +448,7 @@
                 }
 
                 &__input_btn {
-                    display: flex;
-                    justify-content: center;
+                    @include flexCenter();
                     align-items: center;
                     font-weight: 400;
                     font-size: 14px;
@@ -472,8 +462,7 @@
                         width: 100px;
                         border-radius: 0 24px 24px 0;
                         border: none;
-                        display: flex;
-                        justify-content: center;
+                        @include flexCenter();
                         align-items: center;
 
                         &__text {
@@ -510,12 +499,11 @@
 
     &__copy {
         background: #222224;
-        display: flex;
-        justify-content: center;
+        @include flexCenter();
         align-items: center;
 
         &__box {
-            min-width: 1140px;
+            min-width: $siteDesktopWidth;
             display: flex;
             flex-flow: row wrap;
             justify-content: space-between;
@@ -531,9 +519,8 @@
             }
 
             &__right {
-                display: flex;
+                @include flexCenter();
                 flex-flow: row;
-                justify-content: center;
                 align-items: center;
                 gap: 7.29px;
                 margin-top: 24px;
@@ -542,8 +529,7 @@
                 &__items {
                     width: 32px;
                     height: 32px;
-                    display: flex;
-                    justify-content: center;
+                    @include flexCenter();
                     align-items: center;
                     background: #ffffff;
 
@@ -553,7 +539,7 @@
                 }
 
                 &__items:hover {
-                    background: #f16d7f;
+                    background: $pinkColor;
                 }
 
                 &__items:hover > a > svg > path {
