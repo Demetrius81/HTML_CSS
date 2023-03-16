@@ -1,14 +1,44 @@
 @import "_variables_mixins.scss";
 
-html {
-    margin: 0;
-    padding: 0;
-    text-decoration: none;
+*,
+*::before,
+*::after {
     box-sizing: border-box;
+}
+
+ul[class],
+ol[class] {
+    padding: 0px;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+    margin: 0px;
 }
 
 .site {
     overflow: hidden;
+    font-family: "Lato";
+    font-style: normal;
+}
+
+.text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #9f9f9f;
 }
 
 .nav {
@@ -72,8 +102,6 @@ html {
         padding: 32px;
 
         &__menu {
-            margin-top: 0px;
-            margin-bottom: 0px;
             list-style: none;
             @include flexCenter();
             flex-flow: column;
@@ -81,7 +109,6 @@ html {
             gap: 11px;
             &__title {
                 margin-bottom: 12px;
-                margin-top: 0px;
                 font-weight: 700;
                 font-size: 14px;
                 line-height: 17px;
@@ -89,15 +116,12 @@ html {
 
                 &__red {
                     margin-bottom: 1px;
-                    margin-top: 0px;
                     font-weight: 400;
                     color: $pinkColor;
                 }
             }
 
             &__text {
-                margin-top: 0px;
-                margin-bottom: 0px;
                 font-weight: 400;
                 font-size: 14px;
                 line-height: 17px;
@@ -247,15 +271,26 @@ html {
 .shop {
     @include flexCenterCenterColumn();
     gap: 48px;
+    background: #e5e5e5;
+
     &__title {
         @include flexCenterCenterColumn();
 
         &__not_small {
+            font-style: normal;
             font-weight: 400;
             font-size: 30px;
             line-height: 36px;
             color: #222222;
             padding-bottom: 6px;
+        }
+
+        &__text {
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 17px;
+            color: #9f9f9f;
         }
     }
 
@@ -345,13 +380,6 @@ html {
             }
         }
     }
-}
-
-.text {
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 17px;
-    color: #9f9f9f;
 }
 
 .questions {

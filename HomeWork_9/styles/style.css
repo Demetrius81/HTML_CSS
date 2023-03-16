@@ -1,12 +1,42 @@
-html {
-  margin: 0;
-  padding: 0;
-  text-decoration: none;
+*,
+*::before,
+*::after {
   box-sizing: border-box;
+}
+
+ul[class],
+ol[class] {
+  padding: 0px;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0px;
 }
 
 .site {
   overflow: hidden;
+  font-family: "Lato";
+  font-style: normal;
+}
+
+.text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #9f9f9f;
 }
 
 .nav {
@@ -66,8 +96,6 @@ html {
   padding: 32px;
 }
 .burger_box__drop__menu {
-  margin-top: 0px;
-  margin-bottom: 0px;
   list-style: none;
   display: flex;
   justify-content: center;
@@ -77,7 +105,6 @@ html {
 }
 .burger_box__drop__menu__title {
   margin-bottom: 12px;
-  margin-top: 0px;
   font-weight: 700;
   font-size: 14px;
   line-height: 17px;
@@ -85,13 +112,10 @@ html {
 }
 .burger_box__drop__menu__title__red {
   margin-bottom: 1px;
-  margin-top: 0px;
   font-weight: 400;
   color: #f16d7f;
 }
 .burger_box__drop__menu__text {
-  margin-top: 0px;
-  margin-bottom: 0px;
   font-weight: 400;
   font-size: 14px;
   line-height: 17px;
@@ -225,6 +249,7 @@ html {
   align-items: center;
   flex-flow: column;
   gap: 48px;
+  background: #e5e5e5;
 }
 .shop__title {
   display: flex;
@@ -233,11 +258,19 @@ html {
   flex-flow: column;
 }
 .shop__title__not_small {
+  font-style: normal;
   font-weight: 400;
   font-size: 30px;
   line-height: 36px;
   color: #222222;
   padding-bottom: 6px;
+}
+.shop__title__text {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #9f9f9f;
 }
 .shop__cards {
   padding-top: 48px;
@@ -316,13 +349,6 @@ html {
   color: #f26376;
   background: #e5e5e5;
   border: 1px solid #ff6a6a;
-}
-
-.text {
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 17px;
-  color: #9f9f9f;
 }
 
 .questions {
