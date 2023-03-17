@@ -248,16 +248,22 @@ dd {
 
 .catalog {
     &__filter_select {
-        padding-top: 39px;
-        position: relative;
-        height: 132px;
-        // min-height: 132px;
+        padding-top: 51px;
+        padding-bottom: 64px;
+        display: flex;
+        align-items: center;
+        gap: 5vw;
 
         &__left {
-            padding: 13px 16px 16px;
+            position: relative;
+            padding-left: 16px;
             width: 360px;
-            position: absolute;
             box-sizing: border-box;
+        }
+
+        &__filter {
+            position: absolute;
+            top: -8px;
 
             &[open] {
                 background: #ffffff;
@@ -338,26 +344,24 @@ dd {
                 }
             }
         }
+
         &__right {
             @include flexCenter();
-            align-items: center;
+            flex-flow: row;
             gap: 28px;
-            // position: absolute;
-            // top: 51px;
-            // left: calc(50% - 92px);
+            position: relative;
 
             &__details {
                 &__summary svg path {
                     fill: #6f6e6e;
                 }
 
-                &__summary {
-                    position: relative;
-                    display: flex;
-                    list-style: none;
-                    justify-content: center;
-                    align-items: center;
-                    gap: 10px;
+                & [open] {
+                    background: #ffffff;
+                    box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+                }
+
+                &__text {
                     font-style: normal;
                     font-weight: 400;
                     font-size: 14px;
@@ -365,30 +369,140 @@ dd {
                     color: #6f6e6e;
                 }
 
-                &__trending_now {
+                &__summary {
+                    top: 0px;
+                    left: 0px;
+                    display: flex;
+                    align-items: center;
+                    gap: 10px;
+                    cursor: pointer;
+
+                    &:hover span {
+                        color: $pinkColor;
+                    }
+                }
+
+                &__box {
                     position: absolute;
-                    height: 150px;
-                    width: 150px;
-                    border: 1px solid #000000;
                     background: #ffffff;
+                    box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+                    padding: 7px 30px 11px 9px;
                 }
 
                 &__size {
-                    position: absolute;
-                    height: 150px;
-                    width: 150px;
-                    border: 1px solid #000000;
-                    background: #ffffff;
+                    display: flex;
+                    flex-flow: column;
+                    gap: 9px;
+                }
+            }
+        }
+    }
+
+    &__shop {
+        @include flexCenterCenterColumn();
+        gap: 48px;
+        background: #ffffff;
+
+        &__cards {
+            display: grid;
+            grid-template: repeat(3, 581px) / repeat(3, 360px);
+            gap: 30px 30px;
+            place-content: center center;
+            place-items: center center;
+
+            &__card {
+                @include flexCenterCenterColumn();
+                background: #f8f8f8;
+
+                &__image_font {
+                    @include flexCenter();
+                    align-items: center;
+                    min-width: 360px;
+                    min-height: 420px;
+                    background: #f7e4e2;
+                }
+
+                &__content {
+                    padding: 23px 18px 20px 18px;
+                    display: flex;
+                    justify-content: flex-start;
+                    flex-flow: column;
+                    gap: 12px;
+                }
+
+                &__small_title {
+                    font-weight: 400;
+                    font-size: 13px;
+                    line-height: 16px;
+                    color: #000000;
+                }
+
+                &__text {
+                    font-weight: 300;
+                    font-size: 14px;
+                    line-height: 17px;
+                    color: #5d5d5d;
                 }
 
                 &__price {
-                    position: absolute;
-                    height: 150px;
-                    width: 150px;
-                    border: 1px solid #000000;
-                    background: #ffffff;
+                    padding-top: 6px;
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 19px;
+                    color: $pinkColor;
                 }
             }
+
+            &__card:hover {
+                border: 1px dotted $pinkColor;
+            }
+
+            &__card:active {
+                border: 1px solid $pinkColor;
+            }
+        }
+    }
+
+    &__pages {
+        display: flex;
+        justify-content: center;
+        padding-top: 48px;
+        padding-bottom: 96px;
+
+        &__pagination {
+            display: flex;
+            justify-content: center;
+            gap: 18px;
+            padding: 15px 16px;
+            border: 1px solid #ebebeb;
+
+            & a svg path {
+                fill: #000000;
+            }
+
+            &__arrow:hover svg path {
+                fill: $pinkColor;
+            }
+        }
+
+        &__pagination a,
+        p {
+            text-decoration: none;
+            font-style: normal;
+            font-weight: 300;
+            font-size: 16px;
+            line-height: 19px;
+            color: #c4c4c4;
+            transition: background-color 0.3s;
+        }
+
+        &__pagination a.active {
+            color: $pinkColor;
+        }
+
+        &__pagination a:hover:not(.active) {
+            color: $pinkColor;
+            background-color: #ddd;
         }
     }
 }
@@ -417,7 +531,7 @@ dd {
                 fill: $pinkColor;
             }
 
-            &__link:hover > svg > path {
+            &__link:hover svg path {
                 fill: #e05c6ec7;
             }
 
