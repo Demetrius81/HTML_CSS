@@ -34,6 +34,11 @@ dd {
     font-style: normal;
 }
 
+.center {
+    padding-left: calc(50% - $siteDesktopWidth / 2);
+    padding-right: calc(50% - $siteDesktopWidth / 2);
+}
+
 .text {
     font-weight: 400;
     font-size: 14px;
@@ -200,8 +205,12 @@ dd {
 
 // eee
 
-.cart {
+.content {
     &__header {
+        padding-top: 59px;
+        padding-bottom: 60px;
+        background: #f8f3f4;
+
         &__title {
             font-style: normal;
             font-weight: 400;
@@ -210,8 +219,69 @@ dd {
             color: $pinkColor;
         }
     }
-}
 
+    .cart {
+        @include flexCenter();
+        &__items {
+            &__product_cards {
+                display: flex;
+                flex-flow: column;
+                gap: 40px;
+
+                &__card {
+                    width: 652px;
+                    height: 306px;
+                    @include flexCenter();
+                    gap: 31px;
+                    -webkit-box-shadow: 0px 21px 40px 10px rgba(143, 150, 156, 0.39);
+                    -moz-box-shadow: 0px 21px 40px 10px rgba(143, 150, 156, 0.39);
+                    box-shadow: 0px 21px 40px 10px rgba(143, 150, 156, 0.39);
+
+                    &__picture {
+                        width: 262px;
+                    }
+
+                    &__description {
+                        display: flex;
+                        flex-flow: column;
+                        justify-content: flex-start;
+                        gap: 6px;
+                        &__title {
+                            padding-bottom: 36px;
+                            &__text {
+                                font-style: normal;
+                                font-weight: 400;
+                                font-size: 24px;
+                                line-height: 29px;
+                                color: #222222;
+                            }
+                        }
+
+                        &__text {
+                            font-style: normal;
+                            font-weight: 400;
+                            font-size: 22px;
+                            line-height: 26px;
+                            color: #575757;
+                        }
+
+                        &__text_color_red {
+                            color: $pinkColor;
+                        }
+
+                        &__text_color {
+                            color: 6F6E6E;
+                        }
+
+                        &__count {
+                            color: #656565;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
 // eee
 
 .footer {
