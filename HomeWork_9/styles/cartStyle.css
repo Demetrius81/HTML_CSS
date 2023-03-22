@@ -182,6 +182,14 @@ dd {
   color: #f16d7f;
 }
 
+.cart__header__title {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 29px;
+  color: #f16d7f;
+}
+
 .footer__subscribe_main {
   background-image: url("../img/footer/photo_subscribe.jpg");
   background-size: cover;

@@ -199,6 +199,19 @@ dd {
 }
 
 // eee
+
+.cart {
+    &__header {
+        &__title {
+            font-style: normal;
+            font-weight: 400;
+            font-size: 24px;
+            line-height: 29px;
+            color: $pinkColor;
+        }
+    }
+}
+
 // eee
 
 .footer {
