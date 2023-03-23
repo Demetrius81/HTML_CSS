@@ -222,6 +222,8 @@ dd {
 
     .cart {
         @include flexCenter();
+        gap: 128px;
+
         &__items {
             &__product_cards {
                 display: flex;
@@ -231,11 +233,17 @@ dd {
                 &__card {
                     width: 652px;
                     height: 306px;
-                    @include flexCenter();
+                    display: flex;
+                    justify-content: flex-start;
                     gap: 31px;
                     -webkit-box-shadow: 0px 21px 40px 10px rgba(143, 150, 156, 0.39);
                     -moz-box-shadow: 0px 21px 40px 10px rgba(143, 150, 156, 0.39);
                     box-shadow: 0px 21px 40px 10px rgba(143, 150, 156, 0.39);
+
+                    &__img {
+                        width: 262;
+                        height: 306;
+                    }
 
                     &__picture {
                         width: 262px;
@@ -277,6 +285,126 @@ dd {
                             color: #656565;
                         }
                     }
+                }
+            }
+        }
+
+        &__forms {
+            display: flex;
+            flex-flow: column;
+            gap: 40px;
+            box-sizing: border-box;
+            &__address {
+                display: flex;
+                flex-flow: column;
+                gap: 20px;
+
+                &__header {
+                    margin-top: 17px;
+                    font-style: normal;
+                    font-weight: 300;
+                    font-size: 16px;
+                    line-height: 19px;
+                    color: #222222;
+                }
+
+                &__input {
+                    width: 360px;
+                    height: 45px;
+                    font-style: normal;
+                    font-weight: 300;
+                    font-size: 13px;
+                    line-height: 16px;
+                    color: #222222;
+                    border: 1px solid #a4a4a4;
+                    background: #ffffff;
+                }
+
+                &__input1 {
+                    color: #b1b1b1;
+                }
+
+                &__button {
+                    margin-top: 4px;
+                    margin-bottom: 19px;
+                    padding: 10px 14px 10px 14px;
+                    max-width: 110px;
+                    font-style: normal;
+                    font-weight: 300;
+                    font-size: 11px;
+                    line-height: 13px;
+                    color: #4a4a4a;
+                    border: 1px solid #a4a4a4;
+                    background: #ffffff;
+                    cursor: pointer;
+                }
+
+                &__button:hover {
+                    color: $pinkColor;
+                    border: 1px solid $pinkColor;
+                    background: #ffffff;
+                }
+            }
+
+            &__address {
+                color: #b1b1b1;
+            }
+
+            &__price {
+                display: flex;
+                flex-flow: column;
+                align-items: flex-end;
+                gap: 12px;
+                padding: 42px 39px 42px 42px;
+                background: #f5f3f3;
+
+                &__small {
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 11px;
+                    line-height: 13px;
+                    color: #4a4a4a;
+
+                    & span {
+                        margin-left: 15px;
+                    }
+                }
+
+                &__big {
+                    font-style: normal;
+                    font-weight: 300;
+                    font-size: 16px;
+                    line-height: 19px;
+                    color: #222222;
+
+                    & span {
+                        margin-left: 20px;
+                        color: $pinkColor;
+                    }
+                }
+
+                &__line {
+                    border-top: 1px solid #e2e2e2;
+                    padding-top: 17px;
+                    margin-top: 9px;
+                }
+
+                &__button {
+                    color: #ffffff;
+                    background: #f16d7f;
+                    border: none;
+                    font-style: normal;
+                    font-weight: 300;
+                    font-size: 16px;
+                    line-height: 19px;
+                    padding: 15px 43px 16px 41px;
+                    cursor: pointer;
+                }
+
+                &__button:hover {
+                    color: $pinkColor;
+                    background: #ffffff;
+                    border: 1px solid $pinkColor;
                 }
             }
         }
