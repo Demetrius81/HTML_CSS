@@ -1,23 +1,44 @@
-$siteDesktopWidth: 1140px;
-$pinkColor: #f16d7f;
+@import "_variables_mixins.scss";
 
-@mixin flexCenter {
-    display: flex;
-    justify-content: center;
-}
-
-@mixin flexCenterCenterColumn {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-flow: column;
-}
-
-html {
-    margin: 0;
-    padding: 0;
-    text-decoration: none;
+*,
+*::before,
+*::after {
     box-sizing: border-box;
+}
+
+ul[class],
+ol[class] {
+    padding: 0px;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+    margin: 0px;
+}
+
+.site {
+    overflow: hidden;
+    font-family: "Lato";
+    font-style: normal;
+}
+
+.text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #9f9f9f;
 }
 
 .nav {
@@ -29,6 +50,7 @@ html {
     display: flex;
     justify-content: space-around;
     background: #222222;
+    position: relative;
 
     &__icon > path {
         fill: #e8e8e8;
@@ -55,36 +77,45 @@ html {
 .burger_box {
     min-width: 32px;
     min-height: 32px;
-    position: relative;
-    &__burger {
+
+    #burger {
         position: absolute;
-        &__summary {
-            list-style: none;
+        left: -999999px;
+        visibility: hidden;
+        &:checked ~ .drop-menu {
+            right: 0;
         }
     }
 
     &__drop {
         background: #ffffff;
-        border: 1px solid #000000;
-        width: 232px;
+        width: $burgerMenuWidth;
+        box-sizing: border-box;
+        position: absolute;
+        -webkit-box-shadow: 0px 21px 40px 10px rgba(143, 150, 156, 0.39);
+        -moz-box-shadow: 0px 21px 40px 10px rgba(143, 150, 156, 0.39);
+        box-shadow: 0px 21px 40px 10px rgba(143, 150, 156, 0.39);
+        top: 85px;
+        right: -$burgerMenuWidth;
+        transition: right 0.3s;
+        z-index: 1;
+        padding: 32px;
 
         &__menu {
-            margin: 32px;
             list-style: none;
             @include flexCenter();
             flex-flow: column;
             align-items: flex-start;
             gap: 11px;
             &__title {
-                margin-top: 22px;
-                margin-bottom: 22px;
+                margin-bottom: 12px;
                 font-weight: 700;
                 font-size: 14px;
                 line-height: 17px;
                 color: #000000;
 
                 &__red {
-                    margin-top: 12px;
+                    margin-bottom: 1px;
                     font-weight: 400;
                     color: $pinkColor;
                 }
@@ -99,6 +130,7 @@ html {
             }
 
             &__btn {
+                text-decoration: none;
                 background: #ffffff;
                 border: none;
             }
@@ -239,15 +271,26 @@ html {
 .shop {
     @include flexCenterCenterColumn();
     gap: 48px;
+    background: #e5e5e5;
+
     &__title {
         @include flexCenterCenterColumn();
 
         &__not_small {
+            font-style: normal;
             font-weight: 400;
             font-size: 30px;
             line-height: 36px;
             color: #222222;
             padding-bottom: 6px;
+        }
+
+        &__text {
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 17px;
+            color: #9f9f9f;
         }
     }
 
@@ -339,62 +382,55 @@ html {
     }
 }
 
-.text {
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 17px;
-    color: #9f9f9f;
-}
+.questions {
+    @include flexCenter();
+    align-items: center;
+    background: #222224;
 
-.footer {
-    &__nav {
-        @include flexCenter();
+    &__end_links {
+        min-width: $siteDesktopWidth;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
         align-items: center;
-        background: #222224;
+        margin-top: 103px;
+        margin-bottom: 104px;
 
-        &__end_links {
-            min-width: $siteDesktopWidth;
-            display: flex;
-            flex-flow: row wrap;
-            justify-content: space-between;
+        &__item {
+            @include flexCenter();
+            flex-flow: column wrap;
             align-items: center;
-            margin-top: 103px;
-            margin-bottom: 104px;
+            width: 360px;
 
-            &__item {
-                @include flexCenter();
-                flex-flow: column wrap;
-                align-items: center;
-                width: 360px;
+            &__link > svg > path {
+                fill: $pinkColor;
+            }
 
-                &__link > svg > path {
-                    fill: $pinkColor;
-                }
+            &__link:hover > svg > path {
+                fill: #e05c6ec7;
+            }
 
-                &__link:hover > svg > path {
-                    fill: #e05c6ec7;
-                }
+            &__title {
+                font-weight: 400;
+                font-size: 19.96px;
+                line-height: 24px;
+                color: #fbfbfb;
+                margin-top: 28px;
+                margin-bottom: 16px;
+            }
 
-                &__title {
-                    font-weight: 400;
-                    font-size: 19.96px;
-                    line-height: 24px;
-                    color: #fbfbfb;
-                    margin-top: 28px;
-                    margin-bottom: 16px;
-                }
-
-                &__text {
-                    font-weight: 300;
-                    font-size: 13.972px;
-                    line-height: 17px;
-                    text-align: center;
-                    color: #fbfbfb;
-                }
+            &__text {
+                font-weight: 300;
+                font-size: 13.972px;
+                line-height: 17px;
+                text-align: center;
+                color: #fbfbfb;
             }
         }
     }
+}
 
+.footer {
     &__subscribe_main {
         background-image: url("../img/footer/photo_subscribe.jpg");
         background-size: cover;
