@@ -292,6 +292,7 @@ dd {
   background: #ffffff;
   border: 1px solid #a4a4a4;
   cursor: pointer;
+  transition: all 0.3s ease;
 }
 .content .cart__items__buttons__button:hover {
   color: #f16d7f;
@@ -343,6 +344,7 @@ dd {
   border: 1px solid #a4a4a4;
   background: #ffffff;
   cursor: pointer;
+  transition: all 0.3s ease;
 }
 .content .cart__forms__address__button:hover {
   color: #f16d7f;
@@ -396,6 +398,7 @@ dd {
   line-height: 19px;
   padding: 15px 43px 16px 41px;
   cursor: pointer;
+  transition: all 0.3s ease;
 }
 .content .cart__forms__price__button:hover {
   color: #f16d7f;
@@ -476,6 +479,7 @@ dd {
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: all 0.3s ease;
 }
 .footer__subscribe_main__box__form__input_btn__submit__text {
   font-weight: 400;

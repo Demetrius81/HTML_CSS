@@ -324,6 +324,7 @@ dd {
                     background: #ffffff;
                     border: 1px solid #a4a4a4;
                     cursor: pointer;
+                    transition: all 0.3s ease;
 
                     &:hover {
                         color: $pinkColor;
@@ -381,6 +382,7 @@ dd {
                     border: 1px solid #a4a4a4;
                     background: #ffffff;
                     cursor: pointer;
+                    transition: all 0.3s ease;
                 }
 
                 &__button:hover {
@@ -443,6 +445,7 @@ dd {
                     line-height: 19px;
                     padding: 15px 43px 16px 41px;
                     cursor: pointer;
+                    transition: all 0.3s ease;
                 }
 
                 &__button:hover {
@@ -526,6 +529,7 @@ dd {
                         border: none;
                         @include flexCenter();
                         align-items: center;
+                        transition: all 0.3s ease;
 
                         &__text {
                             font-weight: 400;
