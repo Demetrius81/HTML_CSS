@@ -500,6 +500,7 @@ dd {
                         border: none;
                         @include flexCenter();
                         align-items: center;
+                        transition: all 0.3s ease;
 
                         &__text {
                             font-weight: 400;
