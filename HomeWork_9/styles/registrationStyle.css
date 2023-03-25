@@ -187,6 +187,111 @@ dd {
   color: #f16d7f;
 }
 
+.registration {
+  display: flex;
+  justify-content: center;
+  gap: 128px;
+  padding-top: 64px;
+  padding-bottom: 96px;
+}
+.registration__form {
+  display: flex;
+  flex-flow: column;
+  gap: 16px;
+}
+.registration__form__label {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 19px;
+  color: #222222;
+}
+.registration__form__input {
+  padding-top: 4px;
+  width: 360px;
+  height: 45px;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 13px;
+  line-height: 16px;
+  color: #b1b1b1;
+  border: 1px solid #a4a4a4;
+  background: #ffffff;
+}
+.registration__form__radio_label {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 11px;
+  line-height: 13px;
+  color: #000000;
+}
+.registration__form__radio_input {
+  padding-top: 18px;
+  padding-bottom: 18px;
+  border: 1px solid #a4a4a4;
+}
+.registration__form__memo {
+  max-width: 360px;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 13px;
+  line-height: 16px;
+  color: #b1b1b1;
+}
+.registration__form__join_box {
+  display: flex;
+  justify-content: flex-start;
+}
+.registration__form__join {
+  margin-top: 23px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #ffffff;
+  background: #f16d7f;
+  padding: 16px 29px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.registration__form__join span {
+  padding-left: 20px;
+  transition: all 0.3s ease;
+}
+.registration__form__join:hover {
+  background: #ffffff;
+  color: #f16d7f;
+  border: 1px solid #f16d7f;
+}
+.registration__form__join:hover span svg path {
+  fill: #f16d7f;
+}
+.registration__description {
+  max-width: 652px;
+  display: flex;
+  justify-content: flex-start;
+  flex-flow: column;
+  gap: 21px;
+}
+.registration__description__title {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 29px;
+  color: #000000;
+}
+.registration__description__text {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 29px;
+  color: #000000;
+}
+.registration__description__list li {
+  padding-bottom: 16px;
+}
+
 .footer__subscribe_main {
   background-image: url("../img/footer/photo_subscribe.jpg");
   background-size: cover;

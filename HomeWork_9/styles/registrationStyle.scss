@@ -204,6 +204,126 @@ dd {
 }
 
 // eee
+.registration {
+    display: flex;
+    justify-content: center;
+    gap: 128px;
+    padding-top: 64px;
+    padding-bottom: 96px;
+
+    &__form {
+        display: flex;
+        flex-flow: column;
+        gap: 16px;
+
+        &__label {
+            font-style: normal;
+            font-weight: 300;
+            font-size: 16px;
+            line-height: 19px;
+            color: #222222;
+        }
+
+        &__input {
+            padding-top: 4px;
+            width: 360px;
+            height: 45px;
+            font-style: normal;
+            font-weight: 300;
+            font-size: 13px;
+            line-height: 16px;
+            color: #b1b1b1;
+            border: 1px solid #a4a4a4;
+            background: #ffffff;
+        }
+
+        &__radio_label {
+            font-style: normal;
+            font-weight: 300;
+            font-size: 11px;
+            line-height: 13px;
+            color: #000000;
+        }
+
+        &__radio_input {
+            padding-top: 18px;
+            padding-bottom: 18px;
+            border: 1px solid #a4a4a4;
+        }
+
+        &__memo {
+            max-width: 360px;
+            font-style: normal;
+            font-weight: 300;
+            font-size: 13px;
+            line-height: 16px;
+            color: #b1b1b1;
+        }
+
+        &__join_box {
+            display: flex;
+            justify-content: flex-start;
+        }
+
+        &__join {
+            margin-top: 23px;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 17px;
+            color: #ffffff;
+            background: $pinkColor;
+            padding: 16px 29px;
+            border: none;
+            cursor: pointer;
+            transition: all 0.3s ease;
+
+            & span {
+                padding-left: 20px;
+                transition: all 0.3s ease;
+            }
+
+            &:hover {
+                background: #ffffff;
+                color: $pinkColor;
+                border: 1px solid $pinkColor;
+
+                & span svg path {
+                    fill: $pinkColor;
+                }
+            }
+        }
+    }
+
+    &__description {
+        max-width: 652px;
+
+        display: flex;
+        justify-content: flex-start;
+        flex-flow: column;
+        gap: 21px;
+
+        &__title {
+            font-style: normal;
+            font-weight: 300;
+            font-size: 24px;
+            line-height: 29px;
+            color: #000000;
+        }
+
+        &__text {
+            font-style: normal;
+            font-weight: 300;
+            font-size: 24px;
+            line-height: 29px;
+            color: #000000;
+        }
+
+        &__list li {
+            padding-bottom: 16px;
+        }
+    }
+}
 
 // eee
 
