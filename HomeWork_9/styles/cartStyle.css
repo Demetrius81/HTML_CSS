@@ -539,13 +539,14 @@ dd {
   justify-content: center;
   align-items: center;
   background: #ffffff;
+  transition: all 0.3s ease;
 }
-.footer__copy__box__right__items__link > svg > path {
+.footer__copy__box__right__items svg path {
   fill: black;
 }
 .footer__copy__box__right__items:hover {
   background: #f16d7f;
 }
-.footer__copy__box__right__items:hover > a > svg > path {
+.footer__copy__box__right__items:hover svg path {
   fill: #ffffff;
 }/*# sourceMappingURL=cartStyle.css.map */
