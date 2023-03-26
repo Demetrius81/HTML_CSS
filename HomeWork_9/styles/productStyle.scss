@@ -168,6 +168,133 @@ dd {
     }
 }
 
+.subheader {
+    &__box {
+        display: flex;
+        flex-flow: row;
+        justify-content: space-between;
+        align-items: center;
+        background: #f8f3f4;
+        padding-top: 60px;
+        padding-bottom: 60px;
+
+        &__text {
+            font-style: normal;
+            font-weight: 400;
+            font-size: 24px;
+            line-height: 29px;
+            color: $pinkColor;
+        }
+
+        &__container {
+            &__breadcrumb {
+                padding: 10px 16px;
+                list-style: none;
+                background-color: #eee;
+            }
+
+            &__breadcrumb li {
+                display: inline;
+            }
+
+            &__breadcrumb li + li:before {
+                padding: 8px;
+                color: #636363;
+                content: "/\00a0";
+            }
+
+            &__breadcrumb li a {
+                font-style: normal;
+                font-weight: 300;
+                font-size: 14px;
+                line-height: 17px;
+                color: #636363;
+                text-decoration: none;
+            }
+
+            &__breadcrumb li a:hover {
+                font-style: normal;
+                font-weight: 300;
+                font-size: 14px;
+                line-height: 17px;
+                color: #636363;
+                text-decoration: underline;
+            }
+
+            &__breadcrumb li:last-child a {
+                font-style: normal;
+                font-weight: 700;
+                font-size: 14px;
+                line-height: 17px;
+                color: $pinkColor;
+            }
+        }
+    }
+}
+
+.content {
+    &__subheader {
+    }
+
+    &__picture {
+        padding-left: calc(50% - 1600px / 2);
+        padding-right: calc(50% - 1600px / 2);
+
+        &__box {
+            display: flex;
+            flex-flow: row;
+            justify-content: center;
+            align-content: center;
+            align-items: center;
+
+            &__btn {
+                width: 47px;
+                height: 47px;
+                background: rgba(42, 42, 42, 0.15);
+                border: none;
+                cursor: pointer;
+                transition: all 0.3s ease;
+                z-index: 1;
+
+                &:hover {
+                    background: $pinkColor;
+                    & svg path {
+                        fill: #ffffff;
+                    }
+                }
+
+                &__left {
+                    margin-right: -47px;
+
+                    & svg path {
+                        fill: #000000;
+                    }
+                }
+
+                &__right {
+                    margin-left: -47px;
+
+                    & svg path {
+                        fill: $pinkColor;
+                    }
+                }
+            }
+
+            &__img {
+                width: 1600px;
+                height: 777px;
+            }
+
+            &__img img {
+                height: 100%;
+                width: auto;
+                display: block;
+                margin: auto;
+            }
+        }
+    }
+}
+
 .footer {
     &__subscribe_main {
         background-image: url("../img/footer/photo_subscribe.jpg");

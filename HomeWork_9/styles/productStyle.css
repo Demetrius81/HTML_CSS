@@ -1,3 +1,4 @@
+@charset "UTF-8";
 *,
 *::before,
 *::after {
@@ -155,6 +156,108 @@ dd {
   position: absolute;
   top: -10px;
   right: -10px;
+}
+
+.subheader__box {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+  align-items: center;
+  background: #f8f3f4;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.subheader__box__text {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 29px;
+  color: #f16d7f;
+}
+.subheader__box__container__breadcrumb {
+  padding: 10px 16px;
+  list-style: none;
+  background-color: #eee;
+}
+.subheader__box__container__breadcrumb li {
+  display: inline;
+}
+.subheader__box__container__breadcrumb li + li:before {
+  padding: 8px;
+  color: #636363;
+  content: "/ ";
+}
+.subheader__box__container__breadcrumb li a {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 17px;
+  color: #636363;
+  text-decoration: none;
+}
+.subheader__box__container__breadcrumb li a:hover {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 17px;
+  color: #636363;
+  text-decoration: underline;
+}
+.subheader__box__container__breadcrumb li:last-child a {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+  color: #f16d7f;
+}
+
+.content__picture {
+  padding-left: calc(50% - 800px);
+  padding-right: calc(50% - 800px);
+}
+.content__picture__box {
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
+.content__picture__box__btn {
+  width: 47px;
+  height: 47px;
+  background: rgba(42, 42, 42, 0.15);
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  z-index: 1;
+}
+.content__picture__box__btn:hover {
+  background: #f16d7f;
+}
+.content__picture__box__btn:hover svg path {
+  fill: #ffffff;
+}
+.content__picture__box__btn__left {
+  margin-right: -47px;
+}
+.content__picture__box__btn__left svg path {
+  fill: #000000;
+}
+.content__picture__box__btn__right {
+  margin-left: -47px;
+}
+.content__picture__box__btn__right svg path {
+  fill: #f16d7f;
+}
+.content__picture__box__img {
+  width: 1600px;
+  height: 777px;
+}
+.content__picture__box__img img {
+  height: 100%;
+  width: auto;
+  display: block;
+  margin: auto;
 }
 
 .footer__subscribe_main {
