@@ -26,6 +26,11 @@ dd {
   margin: 0px;
 }
 
+.center {
+  padding-left: calc(50% - 570px);
+  padding-right: calc(50% - 570px);
+}
+
 .site {
   overflow: hidden;
   font-family: "Lato";
@@ -197,6 +202,7 @@ dd {
   position: relative;
   text-align: center;
   background: rgba(33, 22, 22, 0.7);
+  transition: all 0.3s ease;
 }
 .menu__item__img {
   min-width: 360px;
@@ -287,6 +293,7 @@ dd {
   align-items: center;
   flex-flow: column;
   background: #f8f8f8;
+  transition: all 0.3s ease;
 }
 .shop__cards__card__image_font {
   display: flex;
@@ -339,16 +346,13 @@ dd {
   color: #f26376;
   background: #e5e5e5;
   border: 1px solid #ff6a6a;
+  cursor: pointer;
+  transition: all 0.3s ease;
 }
-.shop__browse__btn__btn:hover {
+.shop__browse__btn:hover {
   color: #e5e5e5;
-  background: #f26376;
-  border: 1px solid #e5e5e5;
-}
-.shop__browse__btn__btn:active {
-  color: #f26376;
-  background: #e5e5e5;
-  border: 1px solid #ff6a6a;
+  background: #f16d7f;
+  border: 1px solid #f16d7f;
 }
 
 .questions {
@@ -528,14 +532,15 @@ dd {
   justify-content: center;
   align-items: center;
   background: #ffffff;
+  transition: all 0.3s ease;
 }
-.footer__copy__box__right__items__link > svg > path {
+.footer__copy__box__right__items svg path {
   fill: black;
 }
 .footer__copy__box__right__items:hover {
   background: #f16d7f;
 }
-.footer__copy__box__right__items:hover > a > svg > path {
+.footer__copy__box__right__items:hover svg path {
   fill: #ffffff;
 }
 

@@ -30,6 +30,20 @@ dd {
 
 .site {
     overflow: hidden;
+    font-family: "Lato";
+    font-style: normal;
+}
+
+.center {
+    padding-left: calc(50% - $siteDesktopWidth / 2);
+    padding-right: calc(50% - $siteDesktopWidth / 2);
+}
+
+.text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #9f9f9f;
 }
 
 .nav {
@@ -224,6 +238,7 @@ dd {
                         border: none;
                         @include flexCenter();
                         align-items: center;
+                        transition: all 0.3s ease;
 
                         &__text {
                             font-weight: 400;
@@ -232,16 +247,16 @@ dd {
                             display: block;
                             color: #ffffff;
                         }
-                    }
 
-                    &__submit:hover {
-                        border: 1px solid #e05c6e;
-                        background: #e5e5e5;
-                        color: #e05c6e;
-                    }
+                        &:hover {
+                            border: 1px solid #e05c6e;
+                            background: #e5e5e5;
+                            color: #e05c6e;
+                        }
 
-                    &__submit:hover p {
-                        color: #e05c6e;
+                        &:hover p {
+                            color: #e05c6e;
+                        }
                     }
 
                     &__input {
@@ -292,18 +307,19 @@ dd {
                     @include flexCenter();
                     align-items: center;
                     background: #ffffff;
+                    transition: all 0.3s ease;
 
-                    &__link > svg > path {
+                    & svg path {
                         fill: black;
                     }
-                }
 
-                &__items:hover {
-                    background: $pinkColor;
-                }
+                    &:hover {
+                        background: $pinkColor;
+                    }
 
-                &__items:hover > a > svg > path {
-                    fill: #ffffff;
+                    &:hover svg path {
+                        fill: #ffffff;
+                    }
                 }
             }
         }

@@ -28,6 +28,11 @@ dd {
     margin: 0px;
 }
 
+.center {
+    padding-left: calc(50% - $siteDesktopWidth / 2);
+    padding-right: calc(50% - $siteDesktopWidth / 2);
+}
+
 .site {
     overflow: hidden;
     font-family: "Lato";
@@ -212,6 +217,7 @@ dd {
         position: relative;
         text-align: center;
         background: rgba(33, 22, 22, 0.7);
+        transition: all 0.3s ease;
 
         &__img {
             min-width: 360px;
@@ -306,6 +312,7 @@ dd {
         &__card {
             @include flexCenterCenterColumn();
             background: #f8f8f8;
+            transition: all 0.3s ease;
 
             &__image_font {
                 @include flexCenter();
@@ -344,14 +351,14 @@ dd {
                 line-height: 19px;
                 color: $pinkColor;
             }
-        }
 
-        &__card:hover {
-            border: 1px dotted $pinkColor;
-        }
+            &:hover {
+                border: 1px dotted $pinkColor;
+            }
 
-        &__card:active {
-            border: 1px solid $pinkColor;
+            &:active {
+                border: 1px solid $pinkColor;
+            }
         }
     }
 
@@ -366,17 +373,13 @@ dd {
             color: #f26376;
             background: #e5e5e5;
             border: 1px solid #ff6a6a;
+            cursor: pointer;
+            transition: all 0.3s ease;
 
-            &__btn:hover {
+            &:hover {
                 color: #e5e5e5;
-                background: #f26376;
-                border: 1px solid #e5e5e5;
-            }
-
-            &__btn:active {
-                color: #f26376;
-                background: #e5e5e5;
-                border: 1px solid #ff6a6a;
+                background: $pinkColor;
+                border: 1px solid $pinkColor;
             }
         }
     }
@@ -509,16 +512,16 @@ dd {
                             display: block;
                             color: #ffffff;
                         }
-                    }
 
-                    &__submit:hover {
-                        border: 1px solid #e05c6e;
-                        background: #e5e5e5;
-                        color: #e05c6e;
-                    }
+                        &:hover {
+                            border: 1px solid #e05c6e;
+                            background: #e5e5e5;
+                            color: #e05c6e;
+                        }
 
-                    &__submit:hover p {
-                        color: #e05c6e;
+                        &:hover p {
+                            color: #e05c6e;
+                        }
                     }
 
                     &__input {
@@ -569,18 +572,19 @@ dd {
                     @include flexCenter();
                     align-items: center;
                     background: #ffffff;
+                    transition: all 0.3s ease;
 
-                    &__link > svg > path {
+                    & svg path {
                         fill: black;
                     }
-                }
 
-                &__items:hover {
-                    background: $pinkColor;
-                }
+                    &:hover {
+                        background: $pinkColor;
+                    }
 
-                &__items:hover > a > svg > path {
-                    fill: #ffffff;
+                    &:hover svg path {
+                        fill: #ffffff;
+                    }
                 }
             }
         }

@@ -187,223 +187,109 @@ dd {
   color: #f16d7f;
 }
 
-.content__header {
-  padding-top: 59px;
-  padding-bottom: 60px;
-  background: #f8f3f4;
-}
-.content__header__title {
-  font-style: normal;
-  font-weight: 400;
-  font-size: 24px;
-  line-height: 29px;
-  color: #f16d7f;
-}
-.content .cart {
+.registration {
   display: flex;
   justify-content: center;
   gap: 128px;
-  margin-top: 96px;
+  padding-top: 64px;
+  padding-bottom: 96px;
 }
-.content .cart__items {
+.registration__form {
   display: flex;
   flex-flow: column;
-  justify-content: flex-start;
-  gap: 72px;
+  gap: 16px;
 }
-.content .cart__items__product_cards {
-  display: flex;
-  flex-flow: column;
-  gap: 40px;
-}
-.content .cart__items__product_cards__card {
-  width: 652px;
-  height: 306px;
-  display: flex;
-  flex-flow: row;
-  justify-content: flex-start;
-  gap: 31px;
-  box-shadow: 0px 21px 40px 10px rgba(143, 150, 156, 0.39);
-  position: relative;
-}
-.content .cart__items__product_cards__card__img {
-  width: 262;
-  height: 306;
-}
-.content .cart__items__product_cards__card__picture {
-  width: 262px;
-}
-.content .cart__items__product_cards__card__description {
-  display: flex;
-  flex-flow: column;
-  justify-content: flex-start;
-  gap: 6px;
-  margin-top: 22px;
-}
-.content .cart__items__product_cards__card__description__title {
-  font-style: normal;
-  font-weight: 400;
-  font-size: 24px;
-  line-height: 29px;
-  color: #222222;
-  margin-bottom: 36px;
-}
-.content .cart__items__product_cards__card__description__cross {
-  position: absolute;
-  top: 28px;
-  right: 22px;
-}
-.content .cart__items__product_cards__card__description__text {
-  font-style: normal;
-  font-weight: 400;
-  font-size: 22px;
-  line-height: 26px;
-  color: #575757;
-}
-.content .cart__items__product_cards__card__description__text_color_red {
-  color: #f16d7f;
-}
-.content .cart__items__product_cards__card__description__text_color {
-  color: #6f6e6e;
-}
-.content .cart__items__product_cards__card__description__count {
-  color: #656565;
-  border: 1px solid #eaeaea;
-  padding: 1px 16px;
-  margin-left: 25px;
-}
-.content .cart__items__product_cards__card__description__quantity {
-  display: flex;
-  flex-flow: row;
-  justify-content: space-between;
-}
-.content .cart__items__buttons {
-  display: flex;
-  justify-content: space-between;
-  padding-bottom: 128px;
-}
-.content .cart__items__buttons__button {
-  padding: 16px 40px;
-  font-style: normal;
-  font-weight: 300;
-  font-size: 14px;
-  line-height: 17px;
-  color: #000000;
-  background: #ffffff;
-  border: 1px solid #a4a4a4;
-  cursor: pointer;
-  transition: all 0.3s ease;
-}
-.content .cart__items__buttons__button:hover {
-  color: #f16d7f;
-  border-color: #f16d7f;
-}
-.content .cart__forms {
-  display: flex;
-  flex-flow: column;
-  gap: 40px;
-  box-sizing: border-box;
-}
-.content .cart__forms__address {
-  display: flex;
-  flex-flow: column;
-  gap: 20px;
-}
-.content .cart__forms__address__header {
-  margin-top: 17px;
+.registration__form__label {
   font-style: normal;
   font-weight: 300;
   font-size: 16px;
   line-height: 19px;
   color: #222222;
 }
-.content .cart__forms__address__input {
+.registration__form__input {
+  padding-top: 4px;
   width: 360px;
   height: 45px;
   font-style: normal;
   font-weight: 300;
   font-size: 13px;
   line-height: 16px;
-  color: #222222;
+  color: #b1b1b1;
   border: 1px solid #a4a4a4;
   background: #ffffff;
 }
-.content .cart__forms__address__input1 {
-  color: #b1b1b1;
-}
-.content .cart__forms__address__button {
-  margin-top: 4px;
-  margin-bottom: 19px;
-  padding: 10px 14px 10px 14px;
-  max-width: 110px;
+.registration__form__radio_label {
   font-style: normal;
   font-weight: 300;
   font-size: 11px;
   line-height: 13px;
-  color: #4a4a4a;
+  color: #000000;
+}
+.registration__form__radio_input {
+  padding-top: 18px;
+  padding-bottom: 18px;
   border: 1px solid #a4a4a4;
-  background: #ffffff;
-  cursor: pointer;
-  transition: all 0.3s ease;
 }
-.content .cart__forms__address__button:hover {
-  color: #f16d7f;
-  border: 1px solid #f16d7f;
-  background: #ffffff;
-}
-.content .cart__forms__address {
+.registration__form__memo {
+  max-width: 360px;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 13px;
+  line-height: 16px;
   color: #b1b1b1;
 }
-.content .cart__forms__price {
+.registration__form__join_box {
   display: flex;
-  flex-flow: column;
-  align-items: flex-end;
-  gap: 12px;
-  padding: 42px 39px 42px 42px;
-  background: #f5f3f3;
+  justify-content: flex-start;
 }
-.content .cart__forms__price__small {
+.registration__form__join {
+  margin-top: 23px;
   font-style: normal;
   font-weight: 400;
-  font-size: 11px;
-  line-height: 13px;
-  color: #4a4a4a;
-}
-.content .cart__forms__price__small span {
-  margin-left: 15px;
-}
-.content .cart__forms__price__big {
-  font-style: normal;
-  font-weight: 300;
-  font-size: 16px;
-  line-height: 19px;
-  color: #222222;
-}
-.content .cart__forms__price__big span {
-  margin-left: 20px;
-  color: #f16d7f;
-}
-.content .cart__forms__price__line {
-  border-top: 1px solid #e2e2e2;
-  padding-top: 17px;
-  margin-top: 9px;
-}
-.content .cart__forms__price__button {
+  font-size: 14px;
+  line-height: 17px;
   color: #ffffff;
   background: #f16d7f;
+  padding: 16px 29px;
   border: none;
-  font-style: normal;
-  font-weight: 300;
-  font-size: 16px;
-  line-height: 19px;
-  padding: 15px 43px 16px 41px;
   cursor: pointer;
   transition: all 0.3s ease;
 }
-.content .cart__forms__price__button:hover {
-  color: #f16d7f;
+.registration__form__join span {
+  padding-left: 20px;
+  transition: all 0.3s ease;
+}
+.registration__form__join:hover {
   background: #ffffff;
+  color: #f16d7f;
   border: 1px solid #f16d7f;
+}
+.registration__form__join:hover span svg path {
+  fill: #f16d7f;
+}
+.registration__description {
+  max-width: 652px;
+  display: flex;
+  justify-content: flex-start;
+  flex-flow: column;
+  gap: 21px;
+}
+.registration__description__title {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 29px;
+  color: #000000;
+}
+.registration__description__text {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 29px;
+  color: #000000;
+}
+.registration__description__list li {
+  padding-bottom: 16px;
 }
 
 .footer__subscribe_main {
@@ -549,4 +435,4 @@ dd {
 }
 .footer__copy__box__right__items:hover svg path {
   fill: #ffffff;
-}/*# sourceMappingURL=cartStyle.css.map */
+}/*# sourceMappingURL=registrationStyle.css.map */
