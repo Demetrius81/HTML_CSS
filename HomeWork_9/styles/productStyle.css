@@ -259,6 +259,94 @@ dd {
   display: block;
   margin: auto;
 }
+.content__product__choise_menu__right {
+  display: flex;
+  justify-content: center;
+  flex-flow: row;
+  gap: 28px;
+  position: relative;
+}
+.content__product__choise_menu__right__details__summary svg path {
+  fill: #6f6e6e;
+}
+.content__product__choise_menu__right__details [open] {
+  background: #ffffff;
+  box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+}
+.content__product__choise_menu__right__details__text {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #6f6e6e;
+}
+.content__product__choise_menu__right__details__summary {
+  top: 0px;
+  left: 0px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+}
+.content__product__choise_menu__right__details__summary:hover span {
+  color: #f16d7f;
+}
+.content__product__choise_menu__right__details__trending_now_box {
+  display: flex;
+  flex-flow: column;
+  gap: 9px;
+}
+.content__product__choise_menu__right__details__trending_now_box a {
+  text-decoration: none;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #000000;
+}
+.content__product__choise_menu__right__details__box {
+  position: absolute;
+  background: #ffffff;
+  box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+  padding: 7px 30px 11px 9px;
+}
+.content__product__choise_menu__right__details__size {
+  display: flex;
+  flex-flow: column;
+  gap: 9px;
+}
+.content__product__btn {
+  padding-top: 14px;
+  padding-bottom: 14px;
+  padding-left: 23px;
+  padding-right: 56px;
+  border: 1px solid #f16d7f;
+  background: #ffffff;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #f16d7f;
+}
+.content__product__btn span svg path {
+  fill: #f16d7f;
+}
+.content__product__btn:hover {
+  color: #ffffff;
+  background: #f16d7f;
+}
+.content__product__btn:hover p svg path {
+  fill: #ffffff;
+}
+.content__product__btn__box {
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+  align-items: center;
+  gap: 23px;
+}
 
 .footer__subscribe_main {
   background-image: url("../img/footer/photo_subscribe.jpg");

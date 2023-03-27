@@ -293,6 +293,112 @@ dd {
             }
         }
     }
+    &__product {
+        &__choise_menu {
+            &__right {
+                @include flexCenter();
+                flex-flow: row;
+                gap: 28px;
+                position: relative;
+
+                &__details {
+                    &__summary svg path {
+                        fill: #6f6e6e;
+                    }
+
+                    & [open] {
+                        background: #ffffff;
+                        box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+                    }
+
+                    &__text {
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 14px;
+                        line-height: 17px;
+                        color: #6f6e6e;
+                    }
+
+                    &__summary {
+                        top: 0px;
+                        left: 0px;
+                        display: flex;
+                        align-items: center;
+                        gap: 10px;
+                        cursor: pointer;
+
+                        &:hover span {
+                            color: $pinkColor;
+                        }
+                    }
+
+                    &__trending_now_box {
+                        display: flex;
+                        flex-flow: column;
+                        gap: 9px;
+                        & a {
+                            text-decoration: none;
+                            font-style: normal;
+                            font-weight: 400;
+                            font-size: 14px;
+                            line-height: 17px;
+                            color: #000000;
+                        }
+                    }
+
+                    &__box {
+                        position: absolute;
+                        background: #ffffff;
+                        box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+                        padding: 7px 30px 11px 9px;
+                    }
+
+                    &__size {
+                        display: flex;
+                        flex-flow: column;
+                        gap: 9px;
+                    }
+                }
+            }
+        }
+
+        &__btn {
+            // padding: 14 px 56px 14px 23px;
+            padding-top: 14px;
+            padding-bottom: 14px;
+            padding-left: 23px;
+            padding-right: 56px;
+            border: 1px solid $pinkColor;
+            background: #ffffff;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 19px;
+            color: $pinkColor;
+
+            & span svg path {
+                fill: $pinkColor;
+            }
+
+            &:hover {
+                color: #ffffff;
+                background: $pinkColor;
+                & p svg path {
+                    fill: #ffffff;
+                }
+            }
+
+            &__box {
+                display: flex;
+                flex-flow: row;
+                justify-content: center;
+                align-items: center;
+                gap: 23px;
+            }
+        }
+    }
 }
 
 .footer {
