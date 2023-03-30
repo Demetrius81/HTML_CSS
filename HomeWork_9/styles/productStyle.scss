@@ -177,65 +177,63 @@ dd {
         background: #f8f3f4;
         padding-top: 60px;
         padding-bottom: 60px;
+    }
 
-        &__text {
-            font-style: normal;
-            font-weight: 400;
-            font-size: 24px;
-            line-height: 29px;
-            color: $pinkColor;
-        }
+    &__text {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 29px;
+        color: $pinkColor;
+    }
 
-        &__container {
-            &__breadcrumb {
-                padding: 10px 16px;
-                list-style: none;
-                background-color: #eee;
-            }
+    &__container {
+    }
 
-            &__breadcrumb li {
-                display: inline;
-            }
+    &__breadcrumb {
+        padding: 10px 16px;
+        list-style: none;
+        background-color: #eee;
+    }
 
-            &__breadcrumb li + li:before {
-                padding: 8px;
-                color: #636363;
-                content: "/\00a0";
-            }
+    &__breadcrumb li {
+        display: inline;
+    }
 
-            &__breadcrumb li a {
-                font-style: normal;
-                font-weight: 300;
-                font-size: 14px;
-                line-height: 17px;
-                color: #636363;
-                text-decoration: none;
-            }
+    &__breadcrumb li + li:before {
+        padding: 8px;
+        color: #636363;
+        content: "/";
+    }
 
-            &__breadcrumb li a:hover {
-                font-style: normal;
-                font-weight: 300;
-                font-size: 14px;
-                line-height: 17px;
-                color: #636363;
-                text-decoration: underline;
-            }
+    &__breadcrumb li a {
+        font-style: normal;
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 17px;
+        color: #636363;
+        text-decoration: none;
+    }
 
-            &__breadcrumb li:last-child a {
-                font-style: normal;
-                font-weight: 700;
-                font-size: 14px;
-                line-height: 17px;
-                color: $pinkColor;
-            }
-        }
+    &__breadcrumb li a:hover {
+        font-style: normal;
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 17px;
+        color: #636363;
+        text-decoration: underline;
+    }
+
+    &__breadcrumb li:last-child a {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 17px;
+        color: $pinkColor;
     }
 }
 
 .content {
-    &__subheader {
-    }
-
     &__picture {
         padding-left: calc(50% - 1600px / 2);
         padding-right: calc(50% - 1600px / 2);
@@ -283,6 +281,7 @@ dd {
             &__img {
                 width: 1600px;
                 height: 777px;
+                background-color: #f7f7f7;
             }
 
             &__img img {
@@ -293,7 +292,68 @@ dd {
             }
         }
     }
+
+    &__box {
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        align-items: center;
+        gap: 12px;
+        max-width: 1140px;
+        border: 1px solid #eaeaea;
+        padding-top: 64px;
+        padding-bottom: 65px;
+    }
+
     &__product {
+        &__class {
+            font-style: normal;
+            font-weight: 300;
+            font-size: 14px;
+            line-height: 17px;
+            color: $pinkColor;
+        }
+
+        &__line {
+            width: 63px;
+            border-top: 3px solid $pinkColor;
+        }
+
+        &__title {
+            font-style: normal;
+            font-weight: 300;
+            font-size: 18px;
+            line-height: 22px;
+            color: #4d4d4d;
+        }
+
+        &__description {
+            max-width: 555px;
+            font-style: normal;
+            font-weight: 300;
+            font-size: 14px;
+            line-height: 17px;
+            text-align: center;
+            color: #5e5e5e;
+            margin-top: 36px;
+            margin-bottom: 20px;
+        }
+
+        &__price {
+            font-style: normal;
+            font-weight: 300;
+            font-size: 24px;
+            line-height: 29px;
+            color: $pinkColor;
+        }
+
+        &__line-under-price {
+            width: 641px;
+            border-top: 1px solid #eaeaea;
+            margin-top: 53px;
+            margin-bottom: 53px;
+        }
+
         &__choise_menu {
             &__right {
                 @include flexCenter();
@@ -364,6 +424,7 @@ dd {
 
         &__btn {
             // padding: 14 px 56px 14px 23px;
+            margin-top: 36px;
             padding-top: 14px;
             padding-bottom: 14px;
             padding-left: 23px;
@@ -397,6 +458,60 @@ dd {
                 align-items: center;
                 gap: 23px;
             }
+        }
+    }
+
+    &__cards {
+        display: flex;
+        flex-flow: row;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+
+        &__card {
+            @include flexCenterCenterColumn();
+            background: #f8f8f8;
+            margin-bottom: 128px;
+            margin-top: 128px;
+            border: 1px solid #ffffff;
+
+            &__content {
+                padding: 23px 18px 20px 18px;
+                display: flex;
+                justify-content: flex-start;
+                flex-flow: column;
+                gap: 12px;
+            }
+
+            &__small_title {
+                font-weight: 400;
+                font-size: 13px;
+                line-height: 16px;
+                color: #000000;
+            }
+
+            &__text {
+                font-weight: 300;
+                font-size: 14px;
+                line-height: 17px;
+                color: #5d5d5d;
+            }
+
+            &__price {
+                padding-top: 6px;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 19px;
+                color: $pinkColor;
+            }
+        }
+
+        &__card:hover {
+            border: 1px dotted $pinkColor;
+        }
+
+        &__card:active {
+            border: 1px solid $pinkColor;
         }
     }
 }
