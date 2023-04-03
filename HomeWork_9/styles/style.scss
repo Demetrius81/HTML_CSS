@@ -1,5 +1,4 @@
 @import "_variables_mixins.scss";
-@import "_index_media.scss";
 
 *,
 *::before,
@@ -170,14 +169,23 @@ dd {
     }
 }
 
+//eee
+
 .header {
     background: #f1e4e6;
     display: flex;
     justify-content: flex-start;
-    align-items: center;
+    align-items: stretch;
 
     &__man {
-        width: 764px;
+        width: 765px;
+        background: #ffffff;
+    }
+
+    &__title-box {
+        display: flex;
+        align-items: center;
+        background: #f1e4e6;
     }
 
     &__title {
@@ -186,14 +194,14 @@ dd {
         padding-left: 16px;
     }
 
-    &__huge__title {
+    &__huge-title {
         font-weight: 900;
         font-size: 48px;
         line-height: 58px;
         color: #222222;
     }
 
-    &__big__title {
+    &__big-title {
         font-weight: 700;
         font-size: 32px;
         line-height: 39px;
@@ -276,97 +284,6 @@ dd {
     }
 }
 
-.card {
-    @include flexCenterCenterColumn();
-    background: #f8f8f8;
-    transition: all 0.3s ease;
-
-    &__image_font {
-        @include flexCenter();
-        align-items: center;
-        min-width: 360px;
-        min-height: 420px;
-        background: #f7e4e2;
-    }
-
-    &__image_back {
-        position: relative;
-    }
-
-    &__image-btn {
-        display: none;
-        position: absolute;
-        top: calc(50% - 22px);
-        left: calc(50% - 69px);
-        font-style: normal;
-        font-weight: 400;
-        font-size: 14px;
-        line-height: 17px;
-        color: #ffffff;
-        border: 1px solid #ffffff;
-        padding: 8px 10px 16px 13px;
-        background: none;
-        transition: all 0.3s ease;
-        cursor: pointer;
-
-        & span {
-            margin-right: 11px;
-        }
-
-        & span svg path {
-            fill: #ffffff;
-        }
-
-        &:hover {
-            background: $pinkColor;
-            border: 1px solid $pinkColor;
-        }
-    }
-
-    &__content {
-        padding: 23px 18px 20px 18px;
-        display: flex;
-        justify-content: flex-start;
-        flex-flow: column;
-        gap: 12px;
-    }
-
-    &__small-title {
-        font-weight: 400;
-        font-size: 13px;
-        line-height: 16px;
-        color: #000000;
-    }
-
-    &__text {
-        font-weight: 300;
-        font-size: 14px;
-        line-height: 17px;
-        color: #5d5d5d;
-    }
-
-    &__price {
-        padding-top: 6px;
-        font-weight: 400;
-        font-size: 16px;
-        line-height: 19px;
-        color: $pinkColor;
-    }
-
-    &:hover .shop__cards__card__img {
-        filter: grayscale(100%);
-    }
-
-    &:hover .shop__cards__card__image-btn {
-        display: block;
-        z-index: 1;
-    }
-
-    &:hover .shop__cards__card__image_font {
-        filter: grayscale(100%);
-    }
-}
-
 .shop {
     @include flexCenterCenterColumn();
     gap: 48px;
@@ -402,20 +319,22 @@ dd {
         place-content: center center;
         place-items: center center;
 
-        &__card {
+        .card {
             @include flexCenterCenterColumn();
+            max-width: 360px;
+            max-height: 581px;
             background: #f8f8f8;
             transition: all 0.3s ease;
 
-            &__image_font {
+            &__image-font {
                 @include flexCenter();
                 align-items: center;
-                min-width: 360px;
-                min-height: 420px;
+                width: 360px;
+                height: 420px;
                 background: #f7e4e2;
             }
 
-            &__image_back {
+            &__image-back {
                 position: relative;
             }
 
@@ -457,7 +376,7 @@ dd {
                 gap: 12px;
             }
 
-            &__small_title {
+            &__small-title {
                 font-weight: 400;
                 font-size: 13px;
                 line-height: 16px;
@@ -479,16 +398,16 @@ dd {
                 color: $pinkColor;
             }
 
-            &:hover .shop__cards__card__img {
+            &:hover .card__img {
                 filter: grayscale(100%);
             }
 
-            &:hover .shop__cards__card__image-btn {
+            &:hover .card__image-btn {
                 display: block;
                 z-index: 1;
             }
 
-            &:hover .shop__cards__card__image_font {
+            &:hover .card__image_font {
                 filter: grayscale(100%);
             }
         }
@@ -516,6 +435,8 @@ dd {
         }
     }
 }
+
+//eee
 
 .questions {
     @include flexCenter();
@@ -720,3 +641,5 @@ dd {
         }
     }
 }
+
+@import "_index_media.scss";
