@@ -583,7 +583,7 @@ dd {
 .footer .subscribe-main__input {
   display: inline-block;
   background: #e1e1e1;
-  width: 323px;
+  width: 250px;
   height: 49px;
   border-radius: 24px 0 0 24px;
   border: none;
@@ -682,5 +682,99 @@ dd {
   }
   .footer .copy__box {
     min-width: 768px;
+  }
+}
+@media (max-width: 767px) and (min-width: 375px) {
+  .nav {
+    padding-left: calc(50% - 187.5px);
+    padding-right: calc(50% - 187.5px);
+    justify-content: space-between;
+  }
+  .nav__left {
+    margin-right: 0px;
+  }
+  .nav__right {
+    justify-content: flex-end;
+  }
+  .nav__user {
+    display: none;
+  }
+  .nav__basket {
+    display: none;
+  }
+  .nav .basket__count::after {
+    display: none;
+  }
+  .center {
+    padding-left: calc(50% - 187.5px);
+    padding-right: calc(50% - 187.5px);
+  }
+  .subheader__box {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    padding-top: 24px;
+    padding-bottom: 46px;
+    gap: 32px;
+  }
+  .content__picture {
+    padding-left: calc(50% - 187.5px);
+    padding-right: calc(50% - 187.5px);
+  }
+  .content__picture__box__img {
+    width: 375px;
+    height: 624px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .content__picture__box__img img {
+    width: 374px;
+    height: 454px;
+  }
+  .content__box {
+    max-width: 375px;
+  }
+  .content__product__choise_menu__right__details__text {
+    font-size: 10px;
+    line-height: 12px;
+  }
+  .content__cards {
+    flex-flow: column;
+    gap: 16px;
+    padding-bottom: 64px;
+  }
+  .questions__end_links {
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 48px;
+    margin-bottom: 64px;
+    gap: 48px;
+  }
+  .footer .subscribe-main__box {
+    min-width: 375px;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    padding-top: 54px;
+    padding-bottom: 110px;
+    gap: 59px;
+  }
+  .footer .subscribe-main__text {
+    font-size: 18px;
+    line-height: 22px;
+    width: 343px;
+  }
+  .footer .subscribe-main__form {
+    gap: 22px;
+  }
+  .footer .copy__box {
+    min-width: 375px;
+    flex-flow: column-reverse wrap;
+    justify-content: center;
+    gap: 40px;
+    padding-top: 43px;
+    padding-bottom: 9px;
   }
 }/*# sourceMappingURL=productStyle.css.map */
