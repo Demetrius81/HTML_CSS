@@ -1,137 +1,3 @@
-// @media (max-width: 767px) and (min-width: 320px) {
-//     .main {
-//         padding-left: calc(50% - 187.5px);
-//         padding-right: calc(50% - 187.5px);
-//     }
-
-//     .nav {
-//         justify-content: space-between;
-//     }
-
-//     .nav__menu__hide {
-//         display: none;
-//     }
-
-//     .left {
-//         margin-right: 0px;
-//     }
-
-//     .header__man {
-//         display: none;
-//     }
-
-//     .header__title {
-//         margin-top: 148px;
-//         margin-bottom: 149px;
-//         min-width: 263px;
-//     }
-
-//     .huge-title {
-//         font-weight: 900;
-//         font-size: 38px;
-//         line-height: 46px;
-//     }
-
-//     .big-title {
-//         font-weight: 700;
-//         font-size: 20px;
-//         line-height: 24px;
-//     }
-
-//     .item {
-//         width: 343px;
-//         height: 247px;
-//     }
-
-//     .item__img {
-//         width: 343px;
-//         height: 247px;
-//     }
-
-//     .item__img__long {
-//         display: none;
-//         width: 0px;
-//         height: 0px;
-//         min-width: 0px;
-//         min-height: 0px;
-//     }
-
-//     .item__img__mobile {
-//         display: block;
-//         position: relative;
-//         width: 343px;
-//         height: 111px;
-//         opacity: 0.4;
-//     }
-
-//     .item-4 {
-//         width: 343px;
-//         max-height: 111px;
-//         min-height: 0px;
-//         min-width: 0px;
-//     }
-
-//     .cards {
-//         padding-top: 48px;
-//         padding-bottom: 48px;
-//         display: grid;
-//         grid-template: repeat(6, 581px) / repeat(1, 360px);
-//         gap: 30px;
-//         place-content: center center;
-//         place-items: center center;
-//     }
-
-//     .end__links {
-//         min-width: calc(100% - 50px);
-//         display: flex;
-//         flex-flow: column wrap;
-//         justify-content: center;
-//         align-items: center;
-//         gap: 50px;
-//     }
-
-//     .subscribe {
-//         min-width: calc(100% - 50px);
-//         display: flex;
-//         flex-flow: column wrap;
-//         justify-content: center;
-//         align-items: center;
-//         gap: 48px;
-//     }
-
-//     .copy {
-//         min-width: calc(100% - 50px);
-//         display: flex;
-//         flex-flow: column-reverse wrap;
-//         justify-content: center;
-//         align-items: center;
-//     }
-
-//     .subscribe__medium__title {
-//         font-weight: 400;
-//         font-size: 14px;
-//         line-height: 167.2%;
-//     }
-
-//     .subscribe__big__title {
-//         font-weight: 700;
-//         font-size: 24px;
-//         line-height: 167.2%;
-//     }
-
-//     .submit {
-//         height: 48px;
-//         width: 95px;
-//         border-radius: 0 24px 24px 0;
-//     }
-
-//     .email {
-//         width: 250px;
-//         height: 48px;
-//         border-radius: 24px 0 0 24px;
-//     }
-// }
-
 @media (max-width: 1240px) and (min-width: 768px) {
     .nav {
         padding-left: calc(50% - $site768Laptop / 2);
@@ -198,7 +64,6 @@
     .shop {
         @include flexCenterCenterColumn();
         gap: 48px;
-        background: #e5e5e5;
 
         &__title {
             @include flexCenterCenterColumn();
@@ -263,6 +128,170 @@
         .copy {
             &__box {
                 min-width: $site768Laptop;
+            }
+        }
+    }
+}
+
+@media (max-width: 767px) and (min-width: 375px) {
+    .nav {
+        padding-left: calc(50% - $site375Mobile / 2);
+        padding-right: calc(50% - $site375Mobile / 2);
+        justify-content: space-between;
+
+        &__left {
+            margin-right: 0px;
+        }
+
+        &__right {
+            justify-content: flex-end;
+        }
+
+        &__user {
+            display: none;
+        }
+
+        &__basket {
+            display: none;
+        }
+
+        .basket {
+            &__count::after {
+                display: none;
+            }
+        }
+    }
+
+    .header {
+        &__man {
+            display: none;
+        }
+
+        &__title {
+            margin-left: 56px;
+            margin-top: 148px;
+            margin-bottom: 148px;
+        }
+
+        &__huge-title {
+            font-size: 38px;
+            line-height: 46px;
+        }
+
+        &__big-title {
+            font-size: 20px;
+            line-height: 24px;
+        }
+    }
+
+    //eee
+
+    .menu {
+        gap: 20px;
+        padding-top: 20px;
+        padding-bottom: 64px;
+
+        &__item {
+            min-width: 0px;
+            min-height: 0px;
+            width: 343px;
+            height: 247px;
+            &__img {
+                min-width: 0px;
+                min-height: 0px;
+                width: 343px;
+                height: 247px;
+            }
+
+            &__img__long {
+                min-width: 0px;
+                min-height: 0px;
+                display: none;
+                width: 0px;
+                height: 0px;
+                min-width: 0px;
+                min-height: 0px;
+            }
+
+            &__img__mobile {
+                display: block;
+                position: relative;
+                width: 343px;
+                height: 111px;
+                opacity: 0.4;
+            }
+        }
+
+        &__item-4 {
+            width: 343px;
+            max-height: 111px;
+            min-height: 0px;
+            min-width: 0px;
+        }
+    }
+
+    .shop {
+        gap: 0px;
+
+        &__cards {
+            padding-top: 64px;
+            padding-bottom: 41px;
+            display: flex;
+            flex-flow: column;
+            gap: 16px;
+            justify-content: center;
+            align-items: center;
+        }
+
+        &__browse {
+            padding-bottom: 96px;
+        }
+    }
+
+    //eee
+
+    .questions {
+        &__end_links {
+            flex-flow: column wrap;
+            justify-content: center;
+            align-items: center;
+            margin-top: 48px;
+            margin-bottom: 64px;
+            gap: 48px;
+        }
+    }
+
+    .footer {
+        .subscribe-main {
+            &__box {
+                min-width: $site375Mobile;
+                flex-flow: column wrap;
+                justify-content: center;
+                align-items: center;
+                padding-top: 54px;
+                padding-bottom: 110px;
+                gap: 59px;
+            }
+
+            &__text {
+                font-size: 18px;
+                line-height: 22px;
+                width: 343px;
+            }
+
+            &__form {
+                gap: 22px;
+            }
+        }
+
+        .copy {
+            &__box {
+                min-width: $site375Mobile;
+                flex-flow: column-reverse wrap;
+                justify-content: center;
+                gap: 40px;
+                padding-top: 43px;
+                padding-bottom: 9px;
             }
         }
     }
