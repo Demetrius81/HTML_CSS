@@ -744,14 +744,6 @@ dd {
     gap: 16px;
     padding-bottom: 64px;
   }
-  .questions__end_links {
-    flex-flow: column wrap;
-    justify-content: center;
-    align-items: center;
-    margin-top: 48px;
-    margin-bottom: 64px;
-    gap: 48px;
-  }
   .footer .subscribe-main__box {
     min-width: 375px;
     flex-flow: column wrap;

@@ -225,6 +225,8 @@ dd {
                     }
 
                     &__picture {
+                        display: flex;
+                        overflow: hidden;
                         width: 262px;
                     }
 
