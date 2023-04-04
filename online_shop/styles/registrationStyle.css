@@ -510,4 +510,155 @@ li {
   .footer .copy__box {
     min-width: 768px;
   }
+}
+@media (max-width: 767px) and (min-width: 375px) {
+  .nav {
+    padding-left: calc(50% - 187.5px);
+    padding-right: calc(50% - 187.5px);
+    justify-content: space-between;
+  }
+  .nav__left {
+    margin-right: 0px;
+  }
+  .nav__right {
+    justify-content: flex-end;
+  }
+  .nav__user {
+    display: none;
+  }
+  .nav__basket {
+    display: none;
+  }
+  .nav .basket__count::after {
+    display: none;
+  }
+  .center {
+    padding-left: calc(50% - 187.5px);
+    padding-right: calc(50% - 187.5px);
+  }
+  .subheader__box {
+    display: flex;
+    flex-flow: column;
+    justify-content: flex-start;
+    padding-top: 24px;
+    padding-bottom: 46px;
+    gap: 32px;
+  }
+  .registration {
+    flex-flow: column;
+    gap: 40px;
+    padding-top: 40px;
+    padding-bottom: 80px;
+  }
+  .registration__form {
+    padding-left: 5px;
+  }
+  .registration__form__label {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+    color: #222222;
+  }
+  .registration__form__input {
+    padding-top: 4px;
+    width: 360px;
+    height: 45px;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 13px;
+    line-height: 16px;
+    color: #b1b1b1;
+    border: 1px solid #a4a4a4;
+    background: #ffffff;
+  }
+  .registration__form__radio_label {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 11px;
+    line-height: 13px;
+    color: #000000;
+  }
+  .registration__form__radio_input {
+    padding-top: 18px;
+    padding-bottom: 18px;
+    border: 1px solid #a4a4a4;
+  }
+  .registration__form__memo {
+    max-width: 360px;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 13px;
+    line-height: 16px;
+    color: #b1b1b1;
+  }
+  .registration__form__join_box {
+    display: flex;
+    justify-content: flex-start;
+  }
+  .registration__form__join {
+    margin-top: 23px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #ffffff;
+    background: #f16d7f;
+    padding: 16px 29px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  .registration__form__join span {
+    padding-left: 20px;
+    transition: all 0.3s ease;
+  }
+  .registration__form__join:hover {
+    background: #ffffff;
+    color: #f16d7f;
+    border: 1px solid #f16d7f;
+  }
+  .registration__form__join:hover span svg path {
+    fill: #f16d7f;
+  }
+  .registration__description {
+    padding-left: 5px;
+    margin-bottom: 10px;
+    max-width: 652px;
+    gap: 21px;
+  }
+  .registration__description__title {
+    font-size: 16px;
+    line-height: 19px;
+  }
+  .registration__description__text {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+  }
+  .footer .subscribe-main__box {
+    min-width: 375px;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    padding-top: 54px;
+    padding-bottom: 110px;
+    gap: 59px;
+  }
+  .footer .subscribe-main__text {
+    font-size: 18px;
+    line-height: 22px;
+    width: 343px;
+  }
+  .footer .subscribe-main__form {
+    gap: 22px;
+  }
+  .footer .copy__box {
+    min-width: 375px;
+    flex-flow: column-reverse wrap;
+    justify-content: center;
+    gap: 40px;
+    padding-top: 43px;
+    padding-bottom: 9px;
+  }
 }/*# sourceMappingURL=registrationStyle.css.map */
